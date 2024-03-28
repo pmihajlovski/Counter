@@ -1,0 +1,61 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(45deg, #4285f4, #34a853, #fbcc05, #ea4335);
+  color: #ffffff;
+}
+
+.container {
+  text-align: center;
+}
+
+.counter-container {
+  border-radius: 10px;
+  padding: 30px;
+  transition: background-color 0.3s;
+
+}
+
+#counter {
+  font-size: 4em;
+  margin-bottom: 20px;
+  color: #420626;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+button {
+  font-size: 2em;
+  margin: 0 10px;
+  padding: 15px 30px;
+  cursor: pointer;
+  background-color: #4285f4;
+  color: #862121;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3c78d8;
+}
+
+/* Aggiunta animazione di entrata */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.container {
+  animation: fadeIn 0.8s ease-in-out;
+}
